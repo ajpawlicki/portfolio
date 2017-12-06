@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../styles/link.module.css';
+import linkStyles from '../styles/link.module.css';
 
 export default (props) => {
   const { html, github, handleClickToCloseSnippet } = props;
@@ -10,7 +10,7 @@ export default (props) => {
       <h6>
         <span>Example:</span>
         <a
-          className={styles.link}
+          className={linkStyles.anchor}
           style={{ float: 'right' }}
           href={github}
           target="_blank">
@@ -25,7 +25,7 @@ export default (props) => {
           Close
         </span>
         <a
-          className={styles.link}
+          className={linkStyles.anchor}
           style={{ float: 'right' }}
           href={github}
           target="_blank">

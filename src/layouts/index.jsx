@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
 import './index.css'
+import linkStyles from '../styles/link.module.css';
 
 require("prismjs/themes/prism-okaidia.css");
 
@@ -24,10 +25,7 @@ const Header = () => (
       <h3 style={{ margin: 0, display: 'inline' }}>
         <Link
           to="/"
-          style={{
-            color: '#ffd700',
-            textDecoration: 'none',
-          }}
+          className={linkStyles.header}
         >
           Aloysius Pawlicki
         </Link>
@@ -35,12 +33,12 @@ const Header = () => (
       
       <ul style={{ float: 'right', listStyle: 'none' }}>
         <li style={{ display: 'inline-block', marginRight: '1rem' }}>
-          <Link to="/" style={{ color: '#ffd700', textDecoration: 'none' }}>
+          <Link to="/" className={linkStyles.header}>
             Home
           </Link>
         </li>
         <li style={{ display: 'inline-block', marginRight: '1rem' }}>
-          <Link to="/contact/" style={{ color: '#ffd700', textDecoration: 'none' }}>
+          <Link to="/contact/" className={linkStyles.header}>
             Contact
           </Link>
         </li>

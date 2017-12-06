@@ -1,9 +1,9 @@
-.link {
+.anchor {
   color: #4169e1;
   text-decoration: none;
 }
 
-.link:hover {
+.anchor:hover {
   color: #000000;
 }
 
@@ -13,4 +13,13 @@
 
 .title:hover {
   color: #000000;
+}
+
+.header {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.header:hover {
+  color: #ffffff;
 }

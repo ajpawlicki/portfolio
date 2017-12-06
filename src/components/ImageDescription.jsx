@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from './Image.jsx';
 
-import styles from '../styles/link.module.css';
+import linkStyles from '../styles/link.module.css';
 
 class ImageDescription extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class ImageDescription extends React.Component {
             cursor: 'pointer',
             display: 'inline-block'
           }}
-          className={styles.title}
+          className={linkStyles.title}
           onClick={this.handleClickToToggleImage}
         >
           {title}

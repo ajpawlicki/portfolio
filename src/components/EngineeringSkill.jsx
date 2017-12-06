@@ -2,7 +2,7 @@ import React from 'react';
 
 import CodeSnippet from './CodeSnippet.jsx';
 
-import styles from '../styles/link.module.css';
+import linkStyles from '../styles/link.module.css';
 
 class EngineeringSkill extends React.Component {
   constructor(props) {
@@ -35,11 +35,10 @@ class EngineeringSkill extends React.Component {
         <h5
           style={{
             fontStyle: 'italic',
-            // color: '#c0c0c0',
             cursor: 'pointer',
             display: 'inline-block'
           }}
-          className={styles.title}
+          className={linkStyles.title}
           onClick={this.handleClickToToggleSnippet}
         >
           {title}
