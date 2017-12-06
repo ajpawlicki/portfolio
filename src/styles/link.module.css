@@ -6,3 +6,11 @@
 .link:hover {
   color: #000000;
 }
+
+.title {
+  color: #c0c0c0;
+}
+
+.title:hover {
+  color: #000000;
+}

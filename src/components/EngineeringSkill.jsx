@@ -2,6 +2,8 @@ import React from 'react';
 
 import CodeSnippet from './CodeSnippet.jsx';
 
+import styles from '../styles/link.module.css';
+
 class EngineeringSkill extends React.Component {
   constructor(props) {
     super(props);
@@ -33,10 +35,11 @@ class EngineeringSkill extends React.Component {
         <h5
           style={{
             fontStyle: 'italic',
-            color: '#ffd700',
+            // color: '#c0c0c0',
             cursor: 'pointer',
             display: 'inline-block'
           }}
+          className={styles.title}
           onClick={this.handleClickToToggleSnippet}
         >
           {title}

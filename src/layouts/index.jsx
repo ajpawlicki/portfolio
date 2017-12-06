@@ -35,12 +35,12 @@ const Header = () => (
       
       <ul style={{ float: 'right', listStyle: 'none' }}>
         <li style={{ display: 'inline-block', marginRight: '1rem' }}>
-          <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
+          <Link to="/" style={{ color: '#ffd700', textDecoration: 'none' }}>
             Home
           </Link>
         </li>
         <li style={{ display: 'inline-block', marginRight: '1rem' }}>
-          <Link to="/contact/" style={{ color: 'white', textDecoration: 'none' }}>
+          <Link to="/contact/" style={{ color: '#ffd700', textDecoration: 'none' }}>
             Contact
           </Link>
         </li>

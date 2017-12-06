@@ -2,6 +2,8 @@ import React from 'react';
 
 import Image from './Image.jsx';
 
+import styles from '../styles/link.module.css';
+
 class ImageDescription extends React.Component {
   constructor(props) {
     super(props);
@@ -32,10 +34,10 @@ class ImageDescription extends React.Component {
         <h5
           style={{
             fontStyle: 'italic',
-            color: '#ffd700',
             cursor: 'pointer',
             display: 'inline-block'
           }}
+          className={styles.title}
           onClick={this.handleClickToToggleImage}
         >
           {title}
