@@ -1,0 +1,11 @@
+.intro {
+  margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.skill {
+  cursor: pointer;
+  color: #ffd700;
+  font-style: italic;
+}
