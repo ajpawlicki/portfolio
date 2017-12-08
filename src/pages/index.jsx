@@ -49,10 +49,12 @@ const IndexPage = (props) => {
       <div>
         <ImageDescription
           image={systemDesignDiagram}
-          title="System Design" />
+          title="System Design"
+          description="Constructed a front-end system that queries an external API for data that is then rendered in React components." />
         <ImageDescription
           image={schemaDesignDiagram}
-          title="Schema Design" />
+          title="Schema Design"
+          description="Created efficient schema design with denormalized data based off type of relationship between tables." />
       </div>
     </div>
   );
@@ -69,6 +71,7 @@ export const query = graphql`
             title
             order
             github
+            description
           }
           html
         }
