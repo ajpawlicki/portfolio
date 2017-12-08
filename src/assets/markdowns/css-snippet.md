@@ -2,6 +2,7 @@
 title: CSS
 order: 3
 github: https://github.com/ajpawlicki/reddit-reader/blob/master/react-client/dist/styles.css
+description: Enhanced UI cleanliness by vertically and horizontally aligning items in containers using the Flexbox layout.
 ---
 
 ```css

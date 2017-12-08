@@ -2,6 +2,7 @@
 title: JavaScript
 order: 1
 github: https://github.com/ajpawlicki/checkers/blob/master/client/index.js
+description: Maintained separation-of-concerns between logic and UI; used built-in Fetch API and Promises to consume an HTTP API.
 ---
 
 ```js

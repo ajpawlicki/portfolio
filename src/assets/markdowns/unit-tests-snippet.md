@@ -2,6 +2,7 @@
 title: Unit-Tests
 order: 7
 github: https://github.com/ajpawlicki/fillinator/blob/master/bitMap.test.js
+description: Unit-tested a matrix-traversing algorithm and its helper functions with Jest.
 ---
 
 ```js

@@ -2,6 +2,7 @@
 title: SQL
 order: 5
 github: https://gist.github.com/ajpawlicki/114ba1dc3d41594f1bcb4b655413b569
+description: Wrote a SQL select statement with multiple joins and self-joins in order to accurately compare data records.
 ---
 
 ```sql

@@ -2,6 +2,7 @@
 title: React
 order: 2
 github: https://github.com/ajpawlicki/react-clock/blob/master/react-client/src/Components/AlarmClockForm.jsx
+description: Leveraged React's lifecycle method, componentWillReceiveProps, to conditionally call a function passed down through props.
 ---
 
 ```jsx

@@ -2,6 +2,7 @@
 title: NoSQL
 order: 6
 github: https://gist.github.com/ajpawlicki/703b4752aea761faf75e486744e1112e
+description: Created MongoDB queries to insert a document into a collection and to find a document in a collection.
 ---
 
 ```js
