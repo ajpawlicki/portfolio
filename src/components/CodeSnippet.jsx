@@ -20,6 +20,7 @@ export default (props) => {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <h6>
         <span
+          className={linkStyles.anchor}
           style={{ cursor: 'pointer' }}
           onClick={handleClickToCloseSnippet}>
           Close

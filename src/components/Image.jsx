@@ -1,5 +1,7 @@
 import React from 'react';
 
+import linkStyles from '../styles/link.module.css';
+
 export default (props) => {
   const { image, title, handleClickToCloseImage } = props;
   
@@ -15,6 +17,7 @@ export default (props) => {
         }}/>
         <h6>
           <span
+            className={linkStyles.anchor}
             style={{ cursor: 'pointer' }}
             onClick={handleClickToCloseImage}>
             Close

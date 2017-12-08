@@ -8,10 +8,14 @@
 }
 
 .title {
-  color: #c0c0c0;
+  color: #a9a9a9;
 }
 
 .title:hover {
+  color: #000000;
+}
+
+.title-fixed {
   color: #000000;
 }
 
