@@ -27,21 +27,34 @@ class ImageDescription extends React.Component {
   }
 
   render() {
-    const { image, title } = this.props;
+    const { image, title, description } = this.props;
 
     return (
       <div>
-        <h5
-          style={{
-            fontStyle: 'italic',
-            cursor: 'pointer',
-            display: 'inline-block'
-          }}
-          className={linkStyles.title}
+        <div
+          className={this.state.renderImage ? linkStyles['title-fixed'] : linkStyles.title}
           onClick={this.handleClickToToggleImage}
+          style={{ cursor: 'pointer', display: 'inline' }}
         >
-          {title}
-        </h5>
+          <h5
+            style={{
+              fontStyle: 'italic',
+              display: 'inline-block'
+            }}
+          >
+            {title}:
+          </h5>
+
+          <span
+            style={{
+              margin: '0 1rem 1rem 1rem',
+              fontSize: '14px',
+              display: 'inline-block'
+            }}
+          >
+            {description}
+          </span>
+        </div>
         
         {this.state.renderImage ?
           <Image
