@@ -28,21 +28,34 @@ class EngineeringSkill extends React.Component {
 
   render() {
     const { frontmatter, html } = this.props.skill;
-    const { title, github } = frontmatter;
+    const { title, github, description } = frontmatter;
 
     return (
       <div>
-        <h5
-          style={{
-            fontStyle: 'italic',
-            cursor: 'pointer',
-            display: 'inline-block'
-          }}
-          className={linkStyles.title}
+        <div
+          className={this.state.renderCodeSnippet ? linkStyles['title-fixed'] : linkStyles.title}
           onClick={this.handleClickToToggleSnippet}
+          style={{ cursor: 'pointer', display: 'inline' }}
         >
-          {title}
-        </h5>
+          <h5
+            style={{
+              fontStyle: 'italic',
+              display: 'inline-block',
+            }}
+          >
+            {title}:
+          </h5>
+
+          <span
+            style={{
+              margin: '0 1rem 1rem 1rem',
+              fontSize: '14px',
+              display: 'inline-block',
+            }}
+          >
+            {description}
+          </span>
+        </div>
 
         {this.state.renderCodeSnippet ?
           <CodeSnippet
