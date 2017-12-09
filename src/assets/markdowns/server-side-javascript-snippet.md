@@ -2,7 +2,7 @@
 title: Server-Side JavaScript
 order: 4
 github: https://github.com/ajpawlicki/dictionary/blob/master/server/app.js
-description: Built Express server with an endpoint that recursively searches through a string and returns valid words.
+description: Built Express server with an endpoint that performs a recursive string search.
 ---
 
 ```js
