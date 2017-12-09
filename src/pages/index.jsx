@@ -23,7 +23,7 @@ const IndexPage = (props) => {
   return (
     <div>
       <div className={styles.intro} style={{ margin: '3rem auto', maxWidth: '600px', textAlign: 'center' }}>
-        <p>Here are a few quick examples to give you an idea of my software engineering skills:</p>
+        <p>Here are a few quick examples to give you an idea of my software engineering skills (click for more info):</p>
       </div>
       
       <h3 style={{ color: '#4169e1' }}>Front-End</h3>
