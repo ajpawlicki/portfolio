@@ -1,8 +1,10 @@
 import React from 'react';
 
 import CodeSnippet from './CodeSnippet.jsx';
+import feather from '../utils/feather';
 
 import linkStyles from '../styles/link.module.css';
+import iconStyles from '../styles/icon.module.css';
 
 class EngineeringSkill extends React.Component {
   constructor(props) {
@@ -33,14 +35,19 @@ class EngineeringSkill extends React.Component {
     return (
       <div>
         <div
-          className={this.state.renderCodeSnippet ? linkStyles['title-fixed'] : linkStyles.title}
-          onClick={this.handleClickToToggleSnippet}
-          style={{ cursor: 'pointer', display: 'inline' }}
+          style={{ display: 'inline' }}
         >
+          <div style={{ display: 'inline-block', cursor: 'pointer' }} onClick={this.handleClickToToggleSnippet}>
+            {this.state.renderCodeSnippet ?
+              feather('minus-circle', [25, 25], iconStyles['expand-collapse']) :
+              feather('plus-circle', [25, 25], iconStyles['expand-collapse'])}
+          </div>
+
           <h5
             style={{
               fontStyle: 'italic',
               display: 'inline-block',
+              margin: '0 0.5rem 0.5rem 0.5rem'
             }}
           >
             {title}:
@@ -48,7 +55,7 @@ class EngineeringSkill extends React.Component {
 
           <span
             style={{
-              margin: '0 1rem 1rem 1rem',
+              margin: '0 1rem 1rem 0',
               fontSize: '14px',
               display: 'inline-block',
             }}

@@ -1,6 +1,9 @@
 import React from 'react';
 
+import feather from '../utils/feather';
+
 import linkStyles from '../styles/link.module.css';
+import iconStyles from '../styles/icon.module.css';
 
 export default (props) => {
   const { image, title, handleClickToCloseImage } = props;
@@ -15,14 +18,15 @@ export default (props) => {
           borderRadius: '5px',
           marginBottom: '0'
         }}/>
-        <h6>
-          <span
+        <div style={{ marginBottom: '1rem' }}>
+          <div
             className={linkStyles.anchor}
-            style={{ cursor: 'pointer' }}
-            onClick={handleClickToCloseImage}>
-            Close
-          </span>
-        </h6>
+            style={{ cursor: 'pointer', display: 'inline-block' }}
+            onClick={handleClickToCloseImage}
+          >
+            {feather('minus-circle', [25, 25], iconStyles['expand-icon'])}
+          </div>
+        </div>
     </div>
   );
 };
