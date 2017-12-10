@@ -21,25 +21,7 @@ export default (props) => {
         </a>
       </h6>
 
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      
-      <div style={{ marginBottom: '1rem' }}>
-        <div
-          className={linkStyles.anchor}
-          style={{ cursor: 'pointer', display: 'inline-block' }}
-          onClick={handleClickToCloseSnippet}
-        >
-          {feather('minus-circle', [25, 25], iconStyles['expand-icon'])}
-        </div>
-        
-        <a
-          className={linkStyles.anchor}
-          style={{ float: 'right' }}
-          href={github}
-          target="_blank">
-            {feather('github', [25, 25], iconStyles['expand-icon'])}
-        </a>
-      </div>
+      <div style={{ marginBottom: '1rem' }} dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
 };

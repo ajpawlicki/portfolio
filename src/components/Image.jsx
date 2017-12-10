@@ -16,17 +16,8 @@ export default (props) => {
         style={{
           border: '3px solid black',
           borderRadius: '5px',
-          marginBottom: '0'
+          marginBottom: '1rem'
         }}/>
-        <div style={{ marginBottom: '1rem' }}>
-          <div
-            className={linkStyles.anchor}
-            style={{ cursor: 'pointer', display: 'inline-block' }}
-            onClick={handleClickToCloseImage}
-          >
-            {feather('minus-circle', [25, 25], iconStyles['expand-icon'])}
-          </div>
-        </div>
     </div>
   );
 };
